@@ -324,7 +324,7 @@ html, body{
     top: 50%;
     left: 0;
     transform: translate(0%, -50%);
-    background-image: url(./images/sea.jpg);
+    background-image: url(./images/gallery1.jpg);
 }
 
 #pictures #img6{
@@ -333,7 +333,7 @@ html, body{
     top: 50%;
     right: 0;
     transform: translate(0%, -50%);
-    background-image: url(./images/sea.jpg);
+    background-image: url(./images/gallery1.jpg);
 }
 
 #pictures #imgSet1{
@@ -344,19 +344,19 @@ html, body{
 }
 
 #pictures #img3{
-    background-image: url(./images/shaljam.jpg);
+    background-image: url(./images/gallery2.jpg);
 }
 
 #pictures #img2{
-    background-image: url(./images/pinkgreenplant.jpg);
+    background-image: url(./images/gallery3.jpg);
 }
 
 #pictures #img4{
-    background-image: url(./images/shaljam.jpg);
+    background-image: url(./images/gallery2.jpg);
 }
 
 #pictures #img5{
-    background-image: url(./images/pinkgreenplant.jpg);
+    background-image: url(./images/gallery3.jpg);
 }
 
 #pictures .twoGalleryImages div{
