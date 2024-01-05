@@ -9,14 +9,14 @@
 .container{
     width: 100%;
     height: 100vh;
-    background-color: burlywood;
+    background-color: #efedf4;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 form{
-    background: #fff;
+    background: #a6a0b0;
     display: flex;
     flex-direction: column;
     padding: 2vw 4vw;
@@ -26,7 +26,7 @@ form{
 }
 
 form h3{
-    color: #555;
+    color: #353140;
     font-weight: 800;
     margin-bottom: 20px;
 }
@@ -42,8 +42,8 @@ form input, form textarea{
 
 form button{
     padding: 15px;
-    background: #444;
-    color: #eee;
+    background: #353140;
+    color: #efedf4;
     font-size: larger;
     border: 0;
     outline: none;

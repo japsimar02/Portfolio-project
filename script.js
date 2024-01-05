@@ -4,7 +4,7 @@
 const coords = {x: 0, y: 0};
 const circles = document.querySelectorAll(".circle-pointer");
 
-const colors = ["#98904d", "#a58a47", "#b28345", "#be7b48", "#c8724f", "#d0695a", "#d66168", "#d75a79", "#d4578c", "#cc57a0", "#bd5cb5", "#a663c8"];
+const colors = ["#2f1e4a"];
 
 circles.forEach(function(circle, index){
     circle.x = 0;
@@ -82,7 +82,7 @@ tl.from('.section', {
 .from('#circle img', {
     x: '300',
     y: '800',
-    // opacity: 0,
+    opacity: 0,
     // delay: -1,
     ease: 'slow(1.8)',
     duration: .81,
@@ -96,44 +96,44 @@ tl.from('.section', {
 
 //INTRO TEXT ANIMATION
 
-const text = `I am Ashvin Soin, a Journalism and Mass comm undergrad.`;
-const typingSpeed = 0.2;
-const cursorElement = document.querySelector(".typing-cursor");
-const typedTextElement = document.querySelector(".typed-text");
+// const text = `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, laudantium? Similique enim officia dolorum deleniti ut, eos libero dolorem fugiat. Mollitia enim amet deserunt modi sequi cumque voluptatum soluta, vero impedit sed reiciendis nihil doloribus, iure illum consequuntur dolore dolores.`;
+// const typingSpeed = 5;
+// const cursorElement = document.querySelector(".typing-cursor");
+// const typedTextElement = document.querySelector(".typed-text");
 
-typedTextElement.style.fontFamily="sans-serif";
-typedTextElement.style.fontWeight="lighter";
-function typeText() {
-    let charIndex = 0;
-    let lineIndex = 0;
+// typedTextElement.style.fontFamily="sans-serif";
+// typedTextElement.style.fontWeight="lighter";
+// function typeText() {
+//     let charIndex = 0;
+//     let lineIndex = 0;
 
-    const typingInterval = setInterval(() => {
-        if (lineIndex === 0) {
-            typedTextElement.textContent += text[charIndex];
-        } else {  
-            const currentText = typedTextElement.textContent.split("\n");   // read each character
-            const currentLine = currentText[lineIndex];
-            typedTextElement.textContent = currentText
-                .slice(0, lineIndex + 1)
-                .join("\n");
-            typedTextElement.textContent += "\n" + currentLine + text[charIndex];
-        }
-        if (charIndex === text.length - 1) {
-            clearInterval(typingInterval);
-        }
-        charIndex++;
-        if (text[charIndex - 1] === "\n") {   // detect line break, to move cursor to next line
-            lineIndex++; 
-            cursorElement.style.top = `${lineIndex * 30}px`; 
-        }
-    }, typingSpeed);
-}
-window.addEventListener("load", () => {
-    setTimeout(() => {
-        typeText();
-        cursorElement.style.display = "none"; // Hide the cursor when typing is finished
-    }, 1000); // Delay the start of typing for 1 second
-});
+//     const typingInterval = setInterval(() => {
+//         if (lineIndex === 0) {
+//             typedTextElement.textContent += text[charIndex];
+//         } else {  
+//             const currentText = typedTextElement.textContent.split("\n");   // read each character
+//             const currentLine = currentText[lineIndex];
+//             typedTextElement.textContent = currentText
+//                 .slice(0, lineIndex + 1)
+//                 .join("\n");
+//             typedTextElement.textContent += "\n" + currentLine + text[charIndex];
+//         }
+//         if (charIndex === text.length - 1) {
+//             clearInterval(typingInterval);
+//         }
+//         charIndex++;
+//         if (text[charIndex - 1] === "\n") {   // detect line break, to move cursor to next line
+//             lineIndex++; 
+//             cursorElement.style.top = `${lineIndex * 30}px`; 
+//         }
+//     }, typingSpeed);
+// }
+// window.addEventListener("load", () => {
+//     setTimeout(() => {
+//         typeText();
+//         cursorElement.style.display = "none"; // Hide the cursor when typing is finished
+//     }, 100); // Delay the start of typing for .1 second
+// });
 
 
 gsap.to(".sec-elem", {
